@@ -52,6 +52,9 @@ rf -rf ./data
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 echo "Inventory of processed data files:" > data/inventory.txt
+find data/processed -type f >> data/inventory.txt
+
+
 
 ###########################################
 
